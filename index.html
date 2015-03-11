@@ -111,7 +111,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						
+						<a href="/tags/手机技术/" style="font-size: NaNpx;">手机技术</a>
 					</div>
 				</section>
 				
@@ -190,6 +190,73 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="iphone-silk编码转换" class="article article-type-iphone" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/03/12/silk编码转换/" class="article-date">
+  	<time datetime="2015-03-11T16:44:32.000Z" itemprop="datePublished">2015-03-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/03/12/silk编码转换/">silk编码转换</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="iPhone_silk_语音编码转换">iPhone silk 语音编码转换</h1><blockquote>
+<p>iPhone在微信6.0版本以上有些语音会出现silk编码，传统的aud转换成amr播放会出现杂音甚至失败。</p>
+</blockquote>
+<h2 id="转换步骤">转换步骤</h2><ol>
+<li>加载aud语音文件。（可以看到头标志#!SILK_V3）</li>
+<li>删除第一个字节。</li>
+<li>下载github silk decode工程代码进行编译后转换。<br>(<a href="https://github.com/gaozehua/SILKCodec)。" target="_blank" rel="external">https://github.com/gaozehua/SILKCodec)。</a></li>
+<li>用sox 命令行将转换后的raw文件转换成wav。<br>命令如下：(commend : sox -V -t raw -b 16 -e signed-integer -r 24000 silk.raw silk.wav)</li>
+</ol>
+
+        
+          <!-- show an end symbol if the article is fully displayed -->
+          <hr/>
+          <p class="article-more-link">
+            <a>end</a>
+          </p>
+        
+      
+    </div>
+    
+    <div class="article-info">
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/手机技术/">手机技术</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
   
     <article id="post-my-2015" class="article article-type-post" itemscope itemprop="blogPost">
   
